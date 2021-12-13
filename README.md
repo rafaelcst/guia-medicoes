@@ -8,7 +8,7 @@ Ao realizar a integração entre sua aplicação e a CCEE através da Plataforma
 ## O que fazer para enviar dados de medições?
 
 ![Guia Medições - visão geral](./img/passos-informar-coleta.png)
-
+ 
 ### Implemente o endpoint para receber notificações
 
 ![Guia Medições - passo 1](./img/passo1.png)
@@ -16,7 +16,9 @@ Ao realizar a integração entre sua aplicação e a CCEE através da Plataforma
 Implemente uma interface RestAPI que irá receber o retorno da situação da coleta assim que a mesma for admitida ou recusada pela CCEE.
 
 Os detalhes da API e exemplos de implementação, estão disponiveis no manual [Retornar Situação Coleta Medição](https://www.ccee.org.br/documents/80415/919484/Manual%20do%20Usu%C3%A1rio%20-%20Retornar%20Situacao%20Coleta%20Medicao.pdf/e0f36c42-4e4f-1d51-f283-85344ee40e5c).
-
+ 
+--- 
+ 
 ### Envie os dados de medição
 
 ![Guia Medições - passo 2](./img/passo2.png)
@@ -27,18 +29,21 @@ Utilize o serviço *InformarColetaMedicao* para envio das coletas de medições 
     
 Os campos de entrada e saída do serviço podem ser consultados no [manual de utilização](https://www.ccee.org.br/documents/80415/919484/Manual%20do%20Usu%C3%A1rio%20-%20Informar%20Coleta%20Medicao.pdf/e1239897-7981-b1ad-ca68-671645fbebf1) desse serviço. 
 
- > Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador com os serviços da Plataforma de Integração, incluindo o Informar Coleta Medição
-    >
-    > [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/27dc730daa9ea47cfa3e)
+> Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador com os serviços da Plataforma de Integração, incluindo o Informar Coleta Medição
+>
+> [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/27dc730daa9ea47cfa3e)
+
+---
 
 ### Receba as notificações enviadas pela CCEE
 
 ![Guia Medições - passo 3](./img/passo3.png)
 
-A Plataforma de Integração da CCEE realizará apenas uma tentativa de requisição ao serviço
-exposto, no passo 1, e disponibilizado para receber a situação da coleta de medição enviada via Plataforma de Integração. 
+A Plataforma de Integração da CCEE realizará apenas uma tentativa de requisição ao serviço exposto, no passo 1, e disponibilizado para receber a situação da coleta de medição enviada via Plataforma de Integração. 
 
 Os detalhes da API e exemplos de implementação, estão disponiveis no manual [Retornar Situação Coleta Medição](https://www.ccee.org.br/documents/80415/919484/Manual%20do%20Usu%C3%A1rio%20-%20Retornar%20Situacao%20Coleta%20Medicao.pdf/e0f36c42-4e4f-1d51-f283-85344ee40e5c).
+
+---
 
 ### Consulte o status do registro enviado
 
@@ -50,9 +55,9 @@ Se desejado, é possível consultar o status de notificações enviadas. Á cons
 
 Os campos de entrada e saída do serviço podem ser consultados no [manual de utilização](https://www.ccee.org.br/documents/80415/919484/Manual%20do%20Usu%C3%A1rio%20-%20Obter%20Situacao%20Coleta%20Medicao.pdf/7736ea26-c9a6-a944-88f3-642a67c6cbd2) desse serviço. 
 
- > Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador com os serviços da Plataforma de Integração, incluindo o Situação Coleta Medição
-    >
-    > [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/27dc730daa9ea47cfa3e)
+> Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador com os serviços da Plataforma de Integração, incluindo o Situação Coleta Medição
+>
+> [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/27dc730daa9ea47cfa3e)
 
 ## Como consultar os dados de medições ? 
 Existem quatro formas de consultar as medidas registradas na CCEE através da Plataforma de Integração, são elas: 
